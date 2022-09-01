@@ -1,38 +1,335 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background: #fdf1e8;
+  height: 100vh;
+  padding: 7px 10px 0 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* 
+@media only screen and (min-device-width: 320px) and (max-device-width: 390px) and (-webkit-min-device-pixel-ratio: 2) { */
+  .body {
+    background: #fff;
+    height: 96%;
+    padding-top: 5px;
+    border-radius: 30px;
+    width: 91%;
+    padding-left: 15px;
+    padding-right: 16px;
+    /* border: 1px solid red; */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .caption-text {
+    font-size: 10px;
+    color: rgb(80, 79, 79);
   }
-  to {
-    transform: rotate(360deg);
+
+  .navlist-container {
+    display: flex;
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
   }
-}
+
+  .box {
+    background-color: #fafafa;
+    height: 20px;
+    width: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 6px;
+    padding: 7px;
+  }
+
+  .list-icons-container {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .red-bg-circle {
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 70px;
+    transform: translate(-32px, 18px);
+  }
+
+  .large-text {
+    font-size: 34px;
+  }
+
+  .grey {
+    color: grey;
+  }
+
+  .footer {
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    width: 91%;
+    width: 84%;
+  }
+
+  .big-text {
+    font-size: large;
+  }
+
+  .header {
+    background: #ffeac6;
+    display: flex;
+    padding-left: 20px;
+    border-radius: 20px;
+    /* padding-top: 20px; */
+    height: 120px;
+  }
+
+  .btn-red-capsule {
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .categories {
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+  }
+
+  .mb-2 {
+    margin-bottom: 20px;
+  }
+  .container {
+    /* padding: 40px; */
+    /* max-width: 100%;
+    */
+    max-width: 46px;
+    position: relative;
+    /* background: #419be0; */
+  }
+
+  .card--container {
+    height: 200px;
+    width: 150px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+      rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    border-radius: 20px;
+  }
+
+  .notify-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .notify {
+    background-color: #fde2e2;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .btn-red-capsule-carousel {
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f64648;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .btn-white-capsule-carousel {
+    background-color: #f7f7f7;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+
+    justify-content: space-between;
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+  }
+
+  .white-circle {
+    background-color: #fff;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .transparent-circle {
+    background-color: none;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .white-circle:hover {
+    background-color: none;
+  }
+
+  .header-text {
+    align-self: center;
+  }
+
+  .header-text-child {
+    letter-spacing: -1px;
+    padding-bottom: 10px;
+  }
+
+  .red {
+    background: red !important;
+  }
+
+  .red-text {
+    color: red;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+
+  .box-avatar {
+    background-color: #fafafa;
+    align-self: center;
+    border-radius: 6px;
+    padding: 5px;
+  }
+
+  .dot-red {
+   height: 15px;
+    width: 15px;
+    background-color: #F64648;
+    border-radius: 50%;
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+
+
+  .dot {
+    height: 5px;
+    width: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+  }
+  .header-popular {
+      /* color: orange; */
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .orange-text {
+      color: orange;
+    }
+
+    .text-center{
+      display: flex;
+    justify-content: center;
+    }
+
+
+/* } */
+
+
+  @media only screen and (min-device-width: 390px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2)  {
+
+    .popular {
+      height: 300px;
+    }
+
+    .card--container {
+      height: 250px;
+      width: 182px;
+    }
+    .navlist-container{
+      padding-top: 50px;
+    }
+    .header-text-child {
+      letter-spacing: -2px;
+    }
+
+    .header {
+      height: 170px;
+    }
+  }
+
+    @media only screen and (min-device-width: 412px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 2)  {
+
+    .popular {
+      height: 300px;
+    }
+
+    .card--container {
+      height: 250px;
+      width: 182px;
+    }
+    .header-text-child {
+      letter-spacing: -2px;
+    }
+
+    .btn-red-capsule-carousel  {
+      height: 50px;
+      width: 110px;
+    }
+
+    
+
+    .btn-white-capsule-carousel {
+      height: 50px;
+      width: 110px;
+    }
+
+    .categories {
+      height: 110px;
+    }
+
+    .header {
+      height: 170px;
+    }
+
+    @media only screen and (min-device-width: 320px) and  (max-device-width: 321px)  and (-webkit-min-device-pixel-ratio: 2)  {
+      .navlist-container {
+        padding-top: 15px;
+      }
+    }
+  }
