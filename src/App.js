@@ -14,26 +14,6 @@ import CarouselComp from "./Carousel";
 import CarouselTwo from "./CarouselTwo";
 
 function App() {
-  const settings = {
-    dots: false,
-    initialSlide: 0,
-
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-    ],
-    // rows: 3,
-    // slidesPerRow: 2,
-    // arrows: false,
-    swipeToSlide: true,
-    swipe: true,
-  };
   return (
     <div className="app">
       <div className="body">

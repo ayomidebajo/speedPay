@@ -1,13 +1,8 @@
 import React from "react";
-import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Girl from "./assets/girl-removebg.png";
 
 const CarouselComp = () => {
-  let options = {
-    showArrows: false,
-  };
 
   return (
     <Carousel
